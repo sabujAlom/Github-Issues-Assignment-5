@@ -11,7 +11,46 @@
     />
   </head>
 
-  <body>
-   
+  
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="card w-96 bg-white shadow-xl p-8">
+      <div class="flex justify-center mb-4">
+        <img
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          class="w-20 h-20"
+        />
+      </div>
+
+      <h2 class="text-center text-neutral text-2xl font-bold">
+        GitHub Issues Tracker
+      </h2>
+      <p class="text-center text-gray-500 mb-6">
+        Sign in to manage your issues
+      </p>
+
+      <input
+        id="username"
+        type="text"
+        placeholder="Username"
+        class="input input-bordered w-full mb-3"
+      />
+      <br />
+
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+        class="input input-bordered w-full mb-4"
+      />
+
+      <button onclick="login()" class="btn btn-primary w-full">Sign In</button>
+      <hr />
+
+      <p class="text-center text-sm text-gray-500 mt-4">
+        Demo: <b>admin / admin123</b>
+      </p>
+    </div>
+
+    <script src="./script/login.js"></script>
   </body>
 </html>
